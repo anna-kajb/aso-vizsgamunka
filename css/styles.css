@@ -1,0 +1,1142 @@
+			   *{font-family: Times New romans;
+			   }
+/*lábjegyzet*/
+
+.footer {
+    background-color: #0c0136; /* Sötét háttér */
+    color: #eee; /* Világosabb betűszín */
+    padding: 20px 0; /* Kicsit adjunk neki helyet felül-alul */
+    width: 70%; /* teljes szélesség */
+    border-top: 2px solid white; /* Vékony fehér vonal a tetején */
+    font-size: 1rem;
+	
+    text-align: center; /* Középre a szöveget */
+    margin: 0 auto; /* Automatikus margó mindkét oldalon */
+}
+
+.footer p, 
+.footer small {
+    margin: 8px 0;
+}
+
+.footer a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #45a049;
+    text-decoration: underline;
+}
+
+
+
+/* reg.php */
+* {
+    
+    box-sizing: border-box;
+	
+	
+}
+html {
+    min-height: 100vh;
+}
+
+h1, h2, h3{
+	color: white; 
+}
+
+/* reg.php */
+/* Javított háttérszín és reszponzív betűtípus */
+
+
+
+/* Maradhat külön */
+body.reg_body {
+    margin: 0;
+    padding: 0;
+    background-color: #0c0136;
+    color: white;
+}
+
+
+.regh1{
+	margin: 0;
+    text-align: center;
+    color: black;
+}
+/* Fő konténer javítása: szélesség és igazítás */
+.reg_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px; /* tér a fejléc alatt */
+    padding-bottom: 80px; /* tér a lábléc felett */
+    min-height: calc(100vh - 160px); /* teljes magasság - header + footer */
+}
+
+
+/* Űrlap konténer szélesség */
+.reg_box {
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+/* Bemeneti mezők mérete javítva */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px; /* Nagyobb olvashatóság */
+}
+
+/* Gombok javított szélessége */
+input[type="submit"],
+button[name="anon-btn"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px; /* Olvasható méret */
+}
+
+input[type="submit"]:hover,
+button[name="anon-btn"]:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigációs linkek */
+.reg-span a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.reg-span a:hover {
+    text-decoration: underline;
+}
+
+/*-----------------------------------------------*/
+/*index.php*/
+	
+header {
+    display: flex;
+    justify-content: space-between; /* A bal és jobb oldali tartalmak elválasztása */
+    align-items: center; /* Középre igazítja a tartalmat vertikálisan */
+	padding: 10px 20px; /* Padding a headeren belül */
+    background-color: black; /* Szürke háttér a fejlécnek */
+	color: white;
+}
+		
+html {
+    font-family: 'Times New Roman', Times, serif;
+    min-height: 100%;
+    background-color: #0c0136;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0c0136;
+    color: white;
+}
+
+
+
+
+	
+/* FÓRUM */
+.container{
+	text-align: center;
+	padding-top: 50px;
+	
+    flex: 1;
+}	
+.container1 {
+	width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: black;
+	color: white;
+    text-align: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.adomany { color:white; margin-bottom: 10px; padding: 10px; border: 1px solid white;}
+	
+h2{
+	text-align: center;
+	color: white;
+}
+
+/*-----------------------------*/
+	
+/* FÓRUM */
+
+/*adomany tabla*/
+
+.donation-container {
+    max-width: 600px; /* kisebb szélesség */
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: black; 
+    border-radius: 12px;
+}
+
+.donation-container h2 {
+    font-size: 2rem;
+    color: #ffffff; /* fehér cím */
+    border-bottom: 2px solid #ffffff;
+    display: inline-block;
+    padding-bottom: 8px;
+    margin-bottom: 30px;
+}
+
+.donation-card {
+    background-color: #111; /* sötétszürke kártya */
+    border-left: 5px solid #555;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.05);
+    text-align: left;
+    color: #fff; /* fehér szöveg */
+    transition: transform 0.2s ease-in-out;
+}
+
+.donation-card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+.donation-card strong {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+
+
+	
+/*-----------------------------*/
+		
+/* MENÜ */	
+	
+#indexh1	{
+    margin: 0;
+    text-align: center;
+    color: white;
+	padding: 5px;
+   
+}
+#logo{
+	height: 50px; 
+    width: auto; 
+	
+}
+
+
+header,
+ul.menu,
+ul.menu li a,
+ul.menu li a:hover,
+.dropdown-content,
+.dropdown-content a:hover {
+    background-color: bg-dark !important;
+    color: white !important;
+}
+
+ul.menu li a {
+    border: none;
+}
+
+ul.menu li a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/* Menü linkek háttér fekete legyen hover-nél is */
+ul.menu li a:hover,
+.dropdown-content a:hover {
+    background-color: bg-dark !important;
+}
+
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: bg-dark;
+    display: flex;
+    justify-content: center;
+}
+
+ul.menu li {
+   margin-left: 20px; /*itt változtattam*/
+}
+ul.menu li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.menu li a:hover, .dropdown:hover .dropbtn {
+    background-color: bg-dark;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+a {
+    color: #BDB1AE;
+}
+
+/*-------------------------------------*/
+/* Média lekérdezés */
+@media (max-width: 576px) {
+    .reg_box {
+        padding: 15px;
+    }
+
+    .regh1 {
+        font-size: 18px; /* Kisebb címek */
+    }
+
+    input[type="submit"],
+    button[name="anon-btn"] {
+        font-size: 14px;
+    }
+	.menu {
+        display: none; /* Elrejtjük a menüt alapból */
+        width: 100%; /* A menü 100%-ot foglal el */
+        flex-direction: column; /* Menü elemek egymás alá kerülnek */
+    }
+
+    .menu li {
+        margin: 10px 0; /* Növeljük a távolságot a menüpontok között */
+        text-align: center;
+    }
+
+    #logo {
+        margin-right: 0; /* Logónak nincs szüksége extra margóra */
+    }
+
+    .menu-btn {
+        display: block; /* A hamburger menü gomb látható lesz */
+        background-color: #333;
+        border: none;
+        color: white;
+        padding: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .menu-btn.active + .menu {
+        display: flex; /* Ha a hamburger menü aktív, akkor látható a menü */
+    }
+}
+
+/* Ha a képernyő szélesebb, akkor a menü ismét normál módon jelenik meg */
+@media (min-width: 769px) {
+    .menu {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: none; /* Nincs szükség hamburger menü gombra */
+    }
+}
+}
+/* Bootstrap 5 CSS importálása */
+        @import url('https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css');
+		
+
+/* search.php */
+
+.container-1 {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  position: relative; /* Fontos a legördülő listához */
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  max-width: 600px; 
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 1px solid black; 
+  border-radius: 24px; 
+  outline: none;
+  box-shadow: 0px 1px 6px rgba(32, 33, 36, 0.28);
+  transition: box-shadow 0.2s ease-in-out, border 0.2s ease-in-out;
+}
+
+.search-bar input:focus {
+  border: 1px solid #4285f4; 
+  box-shadow: 0px 1px 8px rgba(66, 133, 244, 0.5);
+}
+
+/* 🔽 Google-stílusú legördülő lista */
+.search-bar {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+#search {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 24px;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+
+#search:focus {
+    border-color: black;
+    box-shadow: 0 2px 8px rgba(66, 133, 244, 0.3);
+}
+
+.suggestions-box {
+    position: absolute;
+    width: 100%;
+    background: white;
+    box-shadow: 0 4px 6px rgba(32, 33, 36, 0.28);
+    border-radius: 8px;
+    margin-top: 5px;
+    display: none;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.suggestions-box ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.suggestions-box li {
+    padding: 12px 15px;
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.suggestions-box li:hover {
+    background: #f1f3f4;
+}
+
+.suggestions-box span {
+    font-weight: bold;
+    color: #1a73e8;
+}
+
+@media (max-width: 600px) {
+    .search-bar {
+        max-width: 90%;
+    }
+}
+
+
+/*-----------------------------*/
+/*Connection.php*/
+.contact-info{
+	text-align: center;  
+}
+.p-tag{
+	color: white;
+}
+.connection-page {
+    max-width: 600px;
+	margin: 40px auto 20px auto;
+    padding: 20px;
+    background-color: #f8f9fa; /* Fehér háttér a formhoz */
+    border-radius: 8px;
+}
+
+.connection-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* Sötétebb szín a címhez */
+}
+
+.connection-alert {
+    margin-bottom: 20px;
+}
+
+.connection-form .connection-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333; /* Szöveg színe a címkékhez */
+}
+
+.connection-form .connection-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+.connection-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.connection-button:hover {
+    background-color: #0056b3;
+}
+
+.connection-button:focus {
+    outline: none;
+}
+
+.alert {
+    font-size: 16px;
+    text-align: center;
+}
+/*GYIK rész*/
+.gyik-h2{
+	color: black; 
+}
+.gyik {
+    max-width: 600px; /* Kisebb méret */
+    margin: 30px auto; /* Középre igazítás */
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gyik-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.gyik-question {
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #007bff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.gyik-question:hover {
+    color: #0056b3;
+}
+
+.gyik-answer {
+    background-color: #f8f9fa;
+    padding: 10px;
+    margin-top: 8px;
+    border-left: 3px solid #007bff;
+    font-size: 0.95em;
+    color: #333;
+    line-height: 1.5;
+
+    display: none; /* Eltűnés helyett alapból elrejtjük */
+}
+
+.gyik-item.open .gyik-answer {
+    display: block; /* Ha megnyitják, akkor látszik */
+}
+
+
+
+/*---------------*/
+
+/*---- SHELTERS.PHP -----*/
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  width: 30%;
+  min-width: 250px;
+  max-width: 300px;
+  background-color: #2c3e50; /* sötét, de olvasható */
+  color: #f1f1f1;
+  border-radius: 10px;
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.card h3 {
+  font-size: 1.1em;
+  margin: 8px 0;
+}
+
+.card-details {
+  display: none;
+  font-size: 0.95em;
+  margin-top: 6px;
+  color: #ddd;
+}
+
+.highlight {
+  border: 2px solid #3498db;
+}
+
+.btn-donate {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 8px 12px;
+  background-color: #27ae60;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.btn-donate:hover {
+  background-color: #1e874b;
+}
+
+
+
+
+
+/* 📌 Verify oldal dizájn */
+.verify-body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.verify-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 360px;
+    text-align: center;
+}
+
+.verify-title {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.verify-text {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.verify-alert {
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.verify-alert.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.verify-alert.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.verify-label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.verify-input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.verify-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.verify-button:hover {
+    background-color: #0056b3;
+}
+/* 📌 Profil oldal */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.profile-card {
+    background: #1f1f1f;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #007bff;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.profile-info h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.profile-info p {
+    color: #bbb;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* 📌 Gombok */
+.btn-primary, .btn-secondary {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.btn-primary {
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background: #0056b3;
+}
+
+.btn-secondary {
+    background: #555;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: #333;
+}
+
+/* 📌 Fájl feltöltés mező */
+.upload-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    background: #222;
+    color: white;
+    margin-bottom: 10px;
+    border: 1px solid #444;
+}
+
+/* 📌 Reszponzivitás */
+@media (max-width: 600px) {
+    .profile-card {
+        width: 90%;
+    }
+}
+/*--------------------------------------*/
+/* 📌 Profil oldal (myuser.php) */
+.myuser-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.myuser-card {
+    background: #1f1f1f;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+    max-width: 400px;
+    color: white;
+}
+
+/* Profilkép */
+.myuser-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #007bff;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.myuser-info p {
+    color: #bbb;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Gombok */
+.myuser-btn-primary, .myuser-btn-secondary {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.myuser-btn-primary {
+    background: #007bff;
+    color: white;
+    border: none;
+}
+
+.myuser-btn-primary:hover {
+    background: #0056b3;
+}
+
+.myuser-btn-secondary {
+    background: #6c757d;
+    color: white;
+}
+
+.myuser-btn-secondary:hover {
+    background: #545b62;
+}
+
+/* Profilkép feltöltő mező */
+.myuser-upload-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    background: #222;
+    color: white;
+    margin-bottom: 10px;
+    border: 1px solid #444;
+    text-align: center;
+}
+
+/* Reszponzivitás */
+@media (max-width: 600px) {
+    .myuser-card {
+        width: 90%;
+    }
+}
+
+/*-----------------------------------------------*/
+/*change_password.php*/
+.password-container {
+    background-color: #121212;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.password-box {
+    background-color: #1f1f1f;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 250px;
+    width: 100%;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+
+.password-box label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #ddd;
+    text-align: left;
+}
+
+/* 📬 Jelszóüzenetek */
+.password-message {
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.password-success {
+    background-color: #28a745;
+    color: white;
+}
+
+.password-error {
+    background-color: #dc3545;
+    color: white;
+}
+/*-----------------------------------*/
+/*Admin.php*/
+.admin-form-box {
+    background-color: white;
+    color: black;
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    text-align: center;
+    font-family: 'Times New Roman',Times, serif;
+}
+
+.admin-form-box h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.admin-form-box label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.admin-form-box input[type="text"],
+.admin-form-box input[type="email"],
+.admin-form-box input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.admin-form-box input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+.admin-form-box input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+.admin-list-title {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 24px;
+    color: #007bff;
+}
+
+.admin-table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.admin-table th, .admin-table td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.admin-table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #a71d2a;
+}
+
+.self-admin {
+    color: #888;
+    font-size: 14px;
+}
+.admin-log-box {
+    margin-top: 40px;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.admin-log-box h2 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.admin-log-list {
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.admin-log-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ccc;
+}
+.stats-box {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 25px;
+    margin: 40px auto;
+    border-radius: 12px;
+    max-width: 700px;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+}
+.stats-box h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.stats-box h4 {
+    margin-top: 25px;
+}
+.stats-box ul, .stats-box ol {
+    margin-left: 20px;
+}
+
+
+
